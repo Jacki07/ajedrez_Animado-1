@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('../imagnes/fantasma.jpg'); 
+    background-size: cover; /* Ajusta la imagen para que cubra todo el fondo */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+.beige {
+    background-color: rgb(209, 209, 209);
+    height: 10vh;
+}
+
+.negro {
+    background-color: black;
+    height: 10vh;
+}
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    background-color: rgb(136, 136, 136);
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    border: 10px;
+}
+
+@keyframes vibrar {
+    0% { transform: translate(0px, 0px); }
+    25% { transform: translate(2px, 0px); }
+    50% { transform: translate(0px, 2px); }
+    75% { transform: translate(-2px, 0px); }
+    100% { transform: translate(0px, -2px); }
+}
+
+.ficha {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.ficha:hover {
+    animation: vibrar 0.2s infinite; /* Añadir la animación de vibración */
+ }
